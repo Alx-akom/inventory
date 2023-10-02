@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section>
+        <div class="bg-primary p-2">
+            <div class="row container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-white">Inventory management</h2>
+                    </div>
+
+                    <div class="col-md-4 justify-content-end d-flex">
+                        <p class="text-white align-self-center">Welcome test user | Log out</p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section>
+
+        <nav class="img-fluid">
+            <div class="container-fluid d-flex">
+                <div class=" col-md-4  px-sm-2 px-0 bg-white">
+                    <div
+                        class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                            id="menu">
+                            <li class="nav-item">
+                                <a href="items.html" class="nav-link align-middle px-0">
+                                    <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Items</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="Purchase.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-speedometer2"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Purchase</span> </a>
+                                <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                    <!-- <li class="w-100">
+                                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Vendor
+                                        </li> -->
+                                    <li>
+                                        <a href="vendor.html" class="nav-link px-0"> <span
+                                                class="d-none d-sm-inline">Vendor</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="sale.html" class="nav-link px-0"> <span
+                                                class="d-none d-sm-inline active">Sale</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="Customer.html" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-table"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Customer</span></a>
+                            </li>
+                            <li>
+                                <a href="Search.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                    <i class="fs-4 bi-bootstrap"></i> <span
+                                        class="ms-1 d-none d-sm-inline">Search</span></a>
+                            </li>
+                            <li>
+                                <a href="Reports.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                    <i class="fs-4 bi-grid"></i> <span class="ms-1 d-none d-sm-inline">Reports</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <hr>
+                    </div>
+                </div>
+                <div class="col-md-8 mt-3">
+                    <div class="card">
+                        <div class="bg-light p-2">
+                            <p class="align-self-center" style="line-height: normal;">Sales</p>
+                        </div>
+                        <div class="d-flex">
+                            <p class="ms-2">Item</p>
+                            <p class="ms-2 text-primary">Upload file</p>
+                        </div>
+                        <div class="card-body img-fluid form">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label for="">Item Number<span class="text-danger">*</span></label><br>
+                                        <input type="text" class="form-control bg-light" placeholder="1" required>
+                                    </div>
+                                    <div class="col-md-3 mt-3">
+                                        <label for="productID">Customer ID<span class="text-danger">*</span></label><br>
+                                        <input type="text" class="form-control bg-light" placeholder="14" required>
+                                    </div>
+                                    <div class="col-md-3 mt-3">
+                                        <label for="">Customer Name</label><br>
+                                        <input type="text" class="form-control bg-light" placeholder="Steve Jobs"
+                                            required>
+                                    </div>
+                                    <div class="col-md-3 mt-3">
+                                        <label for="saleID">Sale ID</label><br>
+                                        <input type="text" class="form-control bg-light" placeholder="18" required>
+                                    </div>
+                                </div><br>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="itemName">Item Name</label><br>
+                                        <input type="text" class="form-control bg-light" placeholder="First Bag"
+                                            required><br>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="">Sale Date<span class="text-danger">*</span></label><br>
+                                        <input type="date" class="form-control bg-light" required><br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label for="">Total Stock</label><br>
+                                        <input type="text" class="form-control bg-light" placeholder="26"
+                                            required><br>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="discount">Discount %</label><br>
+                                        <input type="text" class="form-control" placeholder="1" required><br>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="quantity">Quantity<span class="text-danger">*</span></label><br>
+                                        <input type="text" class="form-control" placeholder="2" required><br>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="unitPrice">Unit Price<span class="text-danger">*</span></label><br>
+                                        <input type="text" class="form-control" placeholder="1500" required><br>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label for="total">Total</label>
+                                        <input type="text" class="form-control" placeholder="2970" >
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <img src="images/leisara-creative-studio-FskOHt3xuig-unsplash.jpg" class="img-fluid rounded-3 py-3 d-none d-sm-block" alt="" width="200px" height="200px">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row container">
+                                <div class="col-md-3 mt-3">
+                                    <button class="btn btn-success">Add sale</button>
+                                </div>
+                                <div class="col-md-3 mt-3">
+                                    <button class="btn btn-primary">Update</button>
+                                </div>
+                                <div class="col-md-3 mt-3" style="margin-bottom: 5px;">
+                                    <button class="btn btn-light">Clear</button>
+                                </div>
+                                <div class="col-md-3 mt-3">
+                                    <ul class="pagination">
+                                        <li class="page-item"><a href="vendor.html" class="page-link">Previous</a></li>
+                                        <li class="page-item"><a href="Customer.html" class="page-link">Next</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div><br><br>
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+        </nav>
+
+    </section>
+</body>
+
+</html>

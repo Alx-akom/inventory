@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <section>
+        <!-- Start of navbar -->
+        <nav class="navbar navbar-expand-lg nav-border bg-primary py-4 ">
+            <div class="container d-flex">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="#" class="navbar-brand fw-bold text-white">Inventory Management</a>
+                    </div>
+                    <div class="col-md-6">
+                        <h6 class="text-white">Welcome test user | <span><a href="#"
+                                    class="text-white text-decoration-none">Log out</a></span></h6>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- End of navbar -->
+        <section>
+            <nav class="img-fluid px-5">
+                <div class="container-fluid d-flex">
+                    <div class=" col-md-4  px-sm-2 px-0 bg-white">
+                        <div
+                            class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                            <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+                                id="menu">
+                                <li class="nav-item">
+                                    <a href="items.html" class="nav-link align-middle px-0">
+                                        <i class="fs-4 bi-house"></i> <span class="ms-1 d-none d-sm-inline">Items</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="Purchase.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                        <i class="fs-4 bi-speedometer2"></i> <span
+                                            class="ms-1 d-none d-sm-inline">Purchase</span> </a>
+                                    <ul class="collapse show nav flex-column ms-1" id="submenu1" data-bs-parent="#menu">
+                                        <!-- <li class="w-100">
+                                                <a href="#" class="nav-link px-0"> <span class="d-none d-sm-inline">Vendor
+                                        </li> -->
+                                        <li>
+                                            <a href="vendor.html" class="nav-link px-0"> <span
+                                                    class="d-none d-sm-inline">Vendor</span></a>
+                                        </li>
+                                        <li>
+                                            <a href="sale.html" class="nav-link px-0"> <span
+                                                    class="d-none d-sm-inline">Sale</span></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="Customer.html" class="nav-link px-0 align-middle">
+                                        <i class="fs-4 bi-table"></i> <span
+                                            class="ms-1 d-none d-sm-inline">Customer</span></a>
+                                </li>
+                                <li>
+                                    <a href="Search.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle ">
+                                        <i class="fs-4 bi-bootstrap"></i> <span
+                                            class="ms-1 d-none d-sm-inline active">Search</span></a>
+                                </li>
+                                <li>
+                                    <a href="Reports.html" data-bs-toggle="collapse" class="nav-link px-0 align-middle">
+                                        <i class="fs-4 bi-grid"></i> <span
+                                            class="ms-1 d-none d-sm-inline">Reports</span> </a>
+                                </li>
+                            </ul>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="col-md-8 mt-4">
+                        <div class="card">
+                            <div class="bg-light p-2">
+                                <p class="align-self-center" style="line-height: normal;">Search Inventory</p>
+                            </div>
+                            <div class="d-flex">
+                                <p class="ms-2">Item</p>
+                                <p class="ms-2 text-primary">Upload file</p>
+                            </div>
+                            <div class="img-fluid form">
+                                <div class="card-body">
+                                    <div class="row mb-3">
+                                        <div class="col-md-6">
+                                            <label for="">Show entries</label>
+                                            <input type="number" min="1" max="20" value="10">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="d-flex">
+                                                <label for="">Search: </label>
+                                                <input type="search" class="ms-2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="p-2 table-responsive">
+                                                <table class="table table-bordered table-striped table-hover">
+                                                    <tr>
+                                                        <th>Purchsae ID</th>
+                                                        <th>Item Number</th>
+                                                        <th>Purchase Date</th>
+                                                        <th>ItemName</th>
+                                                        <th>Unit Price</th>
+                                                        <th>Quantity</th>
+                                                        <th>Vendor Name</th>
+                                                        <th>Vendor ID</th>
+                                                        <th>Total Price</th>
+                                                    <tr>
+                                                        <td>39</td>
+                                                        <td>1</td>
+                                                        <td>2018-05-25</td>
+                                                        <td>First Bag</td>
+                                                        <td>1600</td>
+                                                        <td>10</td>
+                                                        <td>Johnson and Johnsons.co</td>
+                                                        <td>3</td>
+                                                        <td>16000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40a</td>
+                                                        <td>1</td>
+                                                        <td>2018-05-25</td>
+                                                        <td>First Bag</td>
+                                                        <td>1600</td>
+                                                        <td>10</td>
+                                                        <td>Johnson and Johnsons.co</td>
+                                                        <td>3</td>
+                                                        <td>16000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>41</td>
+                                                        <td>4</td>
+                                                        <td>2018-05-7</td>
+                                                        <td>Leather Bag</td>
+                                                        <td>1234</td>
+                                                        <td>3</td>
+                                                        <td>Johnson and Johnsons.co</td>
+                                                        <td>3</td>
+                                                        <td>2702</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40a</td>
+                                                        <td>42</td>
+                                                        <td>2018-05-24</td>
+                                                        <td>First Bag</td>
+                                                        <td>345</td>
+                                                        <td>12</td>
+                                                        <td>Louise Vitton Bag</td>
+                                                        <td>4</td>
+                                                        <td>4140</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40a</td>
+                                                        <td>42</td>
+                                                        <td>2018-05-24</td>
+                                                        <td>First Bag</td>
+                                                        <td>345</td>
+                                                        <td>12</td>
+                                                        <td>Louise Vitton Bag</td>
+                                                        <td>4</td>
+                                                        <td>4140</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40a</td>
+                                                        <td>42</td>
+                                                        <td>2018-05-24</td>
+                                                        <td>First Bag</td>
+                                                        <td>345</td>
+                                                        <td>12</td>
+                                                        <td>Louise Vitton Bag</td>
+                                                        <td>4</td>
+                                                        <td>4140</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40a</td>
+                                                        <td>42</td>
+                                                        <td>2018-05-24</td>
+                                                        <td>First Bag</td>
+                                                        <td>345</td>
+                                                        <td>12</td>
+                                                        <td>Louise Vitton Bag</td>
+                                                        <td>4</td>
+                                                        <td>4140</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40a</td>
+                                                        <td>42</td>
+                                                        <td>2018-05-24</td>
+                                                        <td>First Bag</td>
+                                                        <td>345</td>
+                                                        <td>12</td>
+                                                        <td>Louise Vitton Bag</td>
+                                                        <td>4</td>
+                                                        <td>4140</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>40a</td>
+                                                        <td>42</td>
+                                                        <td>2018-05-24</td>
+                                                        <td>First Bag</td>
+                                                        <td>345</td>
+                                                        <td>12</td>
+                                                        <td>Louise Vitton Bag</td>
+                                                        <td>4</td>
+                                                        <td>4140</td>
+                                                    </tr>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row container">
+                                        <div class="col-md-6">
+                                            <p>Showing 1 to 10 of 13 entries</p>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <ul class="pagination">
+                                                <li class="page-item"><a href="Customer.html" class="page-link">Previous</a></li>
+                                                <li class="page-item"><a href="Reports.html" class="page-link">Next</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div><br><br>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+        </section>
+        <section>
+            <footer class="p-3 bg-primary">
+                <div class="container">
+                    <div class="row h-100">
+                        <div class="col-md-12">
+                            <p class="fw-bold text-white" style="text-align: center;">&copy; Copyright 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+            </footer>
+        </section>
+</body>
+
+</html>
